@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Niágara - Dropdowns em cascata</title>
+
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="Niagara.js"></script>
+
+	</head>
+	<body>	
+
+		<select id="sl-1">
+			<option value="">Selecione</option>
+			<option value="1">Teste 1</option>
+			<option value="2">Teste 2</option>
+			<option value="3">Teste 3</option>
+			<option value="4">Teste 4</option>
+			<option value="4">Teste 5</option>
+		</select>
+
+		<select id="sl-2" data-url="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain">
+			<option value="">Selecione</option>
+		</select>
+
+		<select id="sl-3" data-url="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain">
+			<option value="">Selecione</option>
+		</select>
+
+		<select id="sl-4" data-url="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain">
+			<option value="">Selecione</option>
+		</select>
+
+		<select id="sl-5" data-url="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain">
+			<option value="">Selecione</option>
+		</select>
+		
+		<script type="text/javascript">
+			
+			$('#sl-1').Niagara('sl-3,sl-2, sl-5, sl-4');
+
+		</script>
+
+	</body>
+</html>
