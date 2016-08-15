@@ -14,10 +14,11 @@ Plug-in JQuery para dropdowns em cascata.
 	```
 
 - Adicione a propriedade "data-url" no select que receberá os dados, passando como parâmetro a url que fará a consulta, o método que receberá a consulta deverá receber um parâmetro chamado "id" que trará o valor selecionado:
-
+	```html
 	<select id="select2" data-url="http://dominio.com/consulta">
 		<option value="">Selecione um item</option>		
 	</select>
+	```
 
 # Pronto! agora basta organizar a ordem de chamadas pelo id desta forma:
 ```js
