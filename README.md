@@ -1,6 +1,5 @@
 # Niagara-JS
-Biblioteca para dropdowns em cascata.
-Necessário JQuery
+Plug-in JQuery para dropdowns em cascata.
 
 # Niagara JS documentação
 
