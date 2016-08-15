@@ -20,7 +20,7 @@ Plug-in JQuery para dropdowns em cascata.
 	</select>
 	```
 
-# Pronto! agora basta organizar a ordem de chamadas pelo id desta forma:
+## Pronto! agora basta organizar a ordem de chamadas pelo id desta forma:
 ```js
 $('#select1').Niagara('select2');
 ```
