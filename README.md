@@ -1,4 +1,4 @@
-# Niagara-JS
+# Niagara JS
 Plug-in JQuery para dropdowns em cascata.
 
 # Niagara JS documentação
