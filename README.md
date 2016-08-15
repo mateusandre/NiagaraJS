@@ -3,12 +3,21 @@ Plug-in JQuery para dropdowns em cascata.
 
 # Niagara JS documentação
 
-- Primeiro deve-se iniciar com um dropdown já populado
+- Primeiro deve-se iniciar com um dropdown já populado: 
 
-- Adicione a propriedade "data-url" no select que receberá os dados, passando como parâmetro a url que fará a consulta, o método que receberá a consulta deverá receber um parâmetro chamado "id" que trará o valor selecionado
+	<select id="select1">
+		<option value="1">Opção 1</option>
+		<option value="2">Opção 2</option>
+		<option value="3">Opção 3</option>
+	</select>
 
-- Adicione um id para os selects
+- Adicione a propriedade "data-url" no select que receberá os dados, passando como parâmetro a url que fará a consulta, o método que receberá a consulta deverá receber um parâmetro chamado "id" que trará o valor selecionado:
 
-# Pronto! agora basta organizar a ordem de chamadas desta forma:
+	<select id="select2" data-url="http://dominio.com/consulta">
+		<option value="">Selecione um item</option>		
+	</select>
 
-$('#Id do primeiro select').Niagara('Id do select que receberá');
+# Pronto! agora basta organizar a ordem de chamadas pelo id desta forma:
+
+$('#select1').Niagara('select2');
+
