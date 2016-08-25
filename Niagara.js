@@ -1,10 +1,10 @@
 jQuery.fn.extend({
 
-	Niagara: function(params){
+	Niagara: function(params, callback){
 
 		var paramArray = params.split(',');
 		var firstSelect = document.getElementById(paramArray[0].trim());
-		SetSelectEventListener($(this), $(firstSelect));
+		SetSelectEventListener($(this), $(firstSelect), callback);
 
 		if (paramArray.length > 1) {
 
@@ -13,13 +13,13 @@ jQuery.fn.extend({
 				var item = document.getElementById(paramArray[i].trim());
 				var next = document.getElementById(paramArray[i + 1].trim());				
 
-				SetSelectEventListener($(item), $(next));
+				SetSelectEventListener($(item), $(next), callback);
 			}
 		}		
 	}	
 });
 
-function SetSelectEventListener(select, next){
+function SetSelectEventListener(select, next, callback){
 
 	select.on('change', function(){
 
@@ -32,12 +32,16 @@ function SetSelectEventListener(select, next){
 				var html = '<option value="">Selecione um item</option>';
 				for (var y = 0; y < data.length; y++) {
 					var item = data[y];
-					html += '<option value="'+ item.id +'" >'+ item.nome +'</option>';
+					html += '<option value="'+ item.valor +'" >'+ item.texto +'</option>';
 				}
 
-				next.html(html);				
+				next.html(html);
+
+				callback();
 			})				
 		}	
 
 	});
 }
+
+/*Copyright*/
