@@ -37,7 +37,7 @@ function SetSelectEventListener(select, next, callback){
 
 				next.html(html);
 
-				callback();
+				callback(data);
 			})				
 		}	
 
